@@ -5,6 +5,27 @@ body {
 	color: white;
 }
 
+.main {
+	background: linear-gradient(to right, rgb(242, 13, 145), rgb(77, 54, 201));4
+	font-family: sans-serif;
+}
+
+.title {
+	font-size: 5em;
+}
+
+.title2{
+	font-size: 2.5em
+}
+
+.article {
+	font-size:1.5em;
+}
+
+.break {
+	width:500px;
+}
+
 h1 {
 	font-size: 3em;
 }
