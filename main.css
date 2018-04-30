@@ -1,39 +1,125 @@
-body {
-	text-align:center;
-	font-family: sans-serif;
-	background: linear-gradient(to right, red, yellow);
-	color: white;
-}
-
-.main {
-	background: linear-gradient(to right, rgb(242, 13, 145), rgb(77, 54, 201));4
+body, html, h1 {
+	padding: 0;
+	margin: 0;
 	font-family: sans-serif;
 }
+header {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(54, 51, 119);
+	color: rgba(86, 85, 149);
+}
 
-.title {
+.main-title {
+	position: absolute;
 	font-size: 5em;
+	top:35%;
+	left:20%;
 }
 
-.title2{
-	font-size: 2.5em
+.jobtitle {
+	position: absolute;
+	top: 45%;
+	left: 20%;
+	font-size: 2.5em;
+	padding-left: 50px;
 }
 
-.article {
-	font-size:1.5em;
+#about {
+	background-color: rgb(10, 9, 59);
+	height:85vh;
+	color:rgb(129, 128, 178);
 }
 
-.break {
-	width:500px;
+.sub-text {
+	padding-top: 50px;
+	width: 75%;
+	margin:0 auto;
 }
 
-h1 {
-	font-size: 3em;
+.me {
+	padding-top: 50px;
+	width: 300px;
+	height:300px;
+	float:left;
+	padding-left: 200px;
 }
 
-h2 {
-	font-size: 2em;
+#content, a {
+	background-color: rgb(86,85,149);
+	color: rgb(54, 51, 119);
 }
 
-h3 {
-	font-size:1em;
+.sub-title {
+	text-align: center;
+	font-size: 4em;
+	padding-top: 50px;
+}
+
+#project {
+	padding-top: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+a{
+	text-decoration: none;
+}
+
+.pic, .content-link {
+	height:300px;
+	width:300px;
+	margin: auto;
+	transition: all .5s;
+}
+
+.pic:hover {
+	color: white;
+	transform: scale(1.1);
+}
+
+.main-image {
+	width: 100%;
+	height: 75%;
+}
+
+.image-text {
+	text-align: center;
+}
+
+#contact, #social {
+	background-color: rgb(129,128,178);
+	color: rgb(10,9,59);
+	width:50%;
+	height: 50vh;
+	float: left;
+}
+
+.icons {
+	padding-top:50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.facebook {
+	height: 50px;
+	width:50px;
+	background-color: darkblue;
+}
+.twitter {
+	height: 50px;
+	width:50px;
+	background-color: lightblue;
+}
+.github {
+	height: 50px;
+	width:50px;
+	background-color: darkgrey;
+}
+.stack {
+	height: 50px;
+	width:50px;
+	background-color: orange;
 }
