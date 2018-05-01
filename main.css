@@ -7,7 +7,33 @@ header {
 	width: 100%;
 	height: 100vh;
 	background-color: rgb(54, 51, 119);
-	color: rgba(86, 85, 149);
+	color: white;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    float:right;
+    padding: 40px 40px 0 0;
+}
+ 
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .main-title {
@@ -25,10 +51,12 @@ header {
 	padding-left: 50px;
 }
 
+/*About me*/
+
 #about {
 	background-color: rgb(10, 9, 59);
 	height:85vh;
-	color:rgb(129, 128, 178);
+	color:white;
 }
 
 .sub-text {
@@ -45,15 +73,100 @@ header {
 	padding-left: 200px;
 }
 
-#content, a {
+#content, .content-link {
 	background-color: rgb(86,85,149);
-	color: rgb(54, 51, 119);
+	color: white;
 }
 
 .sub-title {
 	text-align: center;
 	font-size: 4em;
 	padding-top: 50px;
+}
+
+/*project section*/
+
+#project {
+	padding-top: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+a{
+	text-decoration: none;
+}
+
+.pic, .content-link {
+	height:300px;
+	width:300px;
+	margin: auto;
+	transition: all .5s;
+}
+
+.pic:hover {
+	color: white;
+	transform: scale(1.1);
+}
+
+.main-image {
+	width: 100%;
+	height: 75%;
+}
+
+.image-text {
+	text-align: center;
+}
+
+/*footer section*/
+
+#contact, #social {
+	background-color: rgb(129,128,178);
+	color: white;
+	width:50%;
+	height: 50vh;
+	float: left;
+}
+
+.icons {
+	padding-top:50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.twitter .facebook .github .stack {
+	background-color: rgb(129,128,178);
+}
+
+@media only screen and (max-width: 633px) {
+	.main-title {
+	position: absolute;
+	font-size: 5em;
+	top:35%;
+	left:15%;
+}
+
+.jobtitle {
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	font-size: 2.5em;
+	padding-left: 50px;
+}
+
+.sub-title {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 30px;
+}
+
+#contact, #social {
+	background-color: rgb(129,128,178);
+	color: white;
+	width:50%;
+	height: 60vh;
+	float: left;
 }
 
 #project {
@@ -88,55 +201,4 @@ a{
 	text-align: center;
 }
 
-#contact, #social {
-	background-color: rgb(129,128,178);
-	color: rgb(10,9,59);
-	width:50%;
-	height: 50vh;
-	float: left;
-}
-
-.icons {
-	padding-top:50px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-}
-
-.facebook {
-	height: 50px;
-	width:50px;
-	background-color: darkblue;
-}
-.twitter {
-	height: 50px;
-	width:50px;
-	background-color: lightblue;
-}
-.github {
-	height: 50px;
-	width:50px;
-	background-color: darkgrey;
-}
-.stack {
-	height: 50px;
-	width:50px;
-	background-color: orange;
-}
-
-@media only screen and (max-width: 650px) {
-	.main-title {
-	position: absolute;
-	font-size: 5em;
-	top:25%;
-	left:20%;
-}
-
-.jobtitle {
-	position: absolute;
-	top: 45%;
-	left: 15%;
-	font-size: 2.5em;
-	padding-left: 50px;
-}
 }

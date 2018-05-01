@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Adam Britton - Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
   <meta charset="utf-8">
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Britton - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
   <header>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     <h1 class="main-title">Adam Britton</h1>
     <h4 class="jobtitle">Developer</h4>
   </header>
@@ -56,26 +62,32 @@
     </div>
   </div>
   <div id="contact">
-    <h1 class="sub-title">Contact Me</h1>
-    <h3 class="sub-text">Mobile: 07123456789</h3>
-    <h3 class="sub-text">Email: Test@test.com</h3>
+    <h1 class="sub-title sub-title2">Contact Me</h1>
+    <h3 class="sub-text">Mobile: 07810303437</h3>
+    <h3 class="sub-text">Email: adzbritton@btinternet.com</h3>
   </div>
   <div id="social">
-    <h1 class="sub-title">Follow Me</h1>
+    <h1 class="sub-title sub-title2">Follow Me</h1>
     <div class="icons">
     <a href="">
-    <div class="facebook"></div>
+    <i class="fa fa-facebook-official faceboook" style="font-size:36px"></i>   
     </a>
-    <a href="">
-    <div class="twitter"></div>
+    <a href="https://twitter.com/adamjbritton">
+    <i class="fa fa-twitter twitter" style="font-size:36px"></i>
     </a>
-    <a href="">
-    <div class="github"></div>
+    <a href="https://github.com/adzbritton">
+    <i class="fa fa-github github" style="font-size:36px"></i>
     </a>
-    <a href="">
-    <div class="stack"></div>
+    <a href="https://stackoverflow.com/users/9564758/adzbritton">
+    <i class="fa fa-stack-overflow stack" style="font-size:36px"></i>
     </a>
     </div>
   </div>
+
+  <script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
 </body>
 </html>
