@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>	
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Britton - Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
   <header>
-      <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    <h1 class="main-title">Adam Britton</h1>
-    <h4 class="jobtitle">Developer</h4>
+<!--   		<div>
+          <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div> -->
+  		<img class="main-image" src="images/keyboard.jpg" alt="keyboard">
+        <h1 class="main-title">Adam Britton</h1>
+        <h4 class="jobtitle">Developer</h4>
   </header>
-<!--   <div id="about">
+  <div id="about">
     <h1 class="sub-title">About Me</h1>
-    <img class="me" src="images/me.jpg">
-    <p class="sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div> -->
+    <p class="sub-text">Hi there, welcome to my portfolio page, where I present my current and past projects. I am very new to Web Development, using courses on Udemy and self taught the skills i know.</p>
+    <div class="skills">
+    	<h1 class="sub-title">Skill Points</h1>
+    	<p>HTML</p>
+        <div class="progress" style="height: 20px;">
+ 		<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+ 		</div>
+ 		</br>
+ 		<p>CSS</p>
+ 		<div class="progress" style="height: 20px">
+ 		<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+ 		</div>
+ 		</br>
+ 		<p>JavaScript</p>
+ 		<div class="progress" style="height: 20px;">
+ 		<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">40%</div>
+ 		</div>
+ 		</br>
+ 		<p>React</p>
+ 		<div class="progress" style="height: 20px;">
+ 		<div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+ 		</div>
+ 	</div>
   <div id="content">
     <h1 class="sub-title">My Projects</h1>
     <div id="project">
@@ -43,7 +56,7 @@
     </a>
     <a class="content-link" href="">
       <div class="pic">
-      <img class="main-image" src="images/marvel.png">
+      <img class="main-image" src="images/marvel.jpg">
       <h3 class="image-text">Marvel</h3>
       </div>
     </a>
@@ -53,34 +66,31 @@
       <h3 class="image-text">CAJ Management</h3>
       </div>
     </a>
-    <a class="content-link" href="">
+    <a class="content-link" href="robofriends\src\index.js">
       <div class="pic">
-      <img class="main-image" src="images/8.jpg">
-      <h3 class="image-text">Project 4</h3>
+      <img class="main-image" src="http://robohash.org/Adam">
+      <h3 class="image-text">RoboFriends App</h3>
       </div>
     </a>
     </div>
   </div>
-  <div id="contact">
+<!--   <div id="contact">
     <h1 class="sub-title sub-title2">Contact Me</h1>
     <h3 class="sub-text">Mobile: 07810303437</h3>
     <h3 class="sub-text">Email: adzbritton@btinternet.com</h3>
-  </div>
+  </div> -->
   <div id="social">
-    <h1 class="sub-title sub-title2">Follow Me</h1>
     <div class="icons">
-    <a href="">
-    <i class="fa fa-facebook-official faceboook" style="font-size:36px"></i>   
-    </a>
-    <a href="https://twitter.com/adamjbritton">
-    <i class="fa fa-twitter twitter" style="font-size:36px"></i>
-    </a>
-    <a href="https://github.com/adzbritton">
-    <i class="fa fa-github github" style="font-size:36px"></i>
-    </a>
-    <a href="https://stackoverflow.com/users/9564758/adzbritton">
-    <i class="fa fa-stack-overflow stack" style="font-size:36px"></i>
-    </a>
+<a class="tw-ic mr-3"><i class="fa fa-lg fa-twitter"> </i></a>
+	  <a class="btn btn-social-icon btn-twitter">
+	    <span class="fa fa-twitter"></span>
+	  </a>
+	  <a class="btn btn-social-icon btn-twitter">
+	    <span class="fa fa-twitter"></span>
+	  </a>
+	  <a class="btn btn-social-icon btn-twitter">
+	    <span class="fa fa-twitter"></span>
+	  </a>
     </div>
   </div>
 

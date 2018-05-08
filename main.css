@@ -1,14 +1,21 @@
-body, html, h1 {
+body, html, h1, header {
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 }
+
+.main-image {
+	width:100%;
+	height:100vh;
+	padding: 0;
+}
+
+
 header {
 	width: 100%;
-	height: 100vh;
-	background-color: rgb(54, 51, 119);
 	color: white;
 }
+
 .container {
     display: inline-block;
     cursor: pointer;
@@ -45,17 +52,38 @@ header {
 
 .jobtitle {
 	position: absolute;
-	top: 45%;
-	left: 20%;
 	font-size: 2.5em;
-	padding-left: 50px;
+	top: 55%;
+	left: 20%;
 }
+
+.main-title, .jobtitle, .sub-title {
+	font-family: Avantgarde, CenturyGothic, sans-serif;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	color: #d5d5d5;
+	letter-spacing: .05em;
+	text-shadow: 
+		4px 4px 0px #2c2c2c,
+		7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-title:hover, .jobtitle:hover {
+	font-family: Avantgarde, CenturyGothic, sans-serif;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	color: #2c2c2c;
+	letter-spacing: .05em;
+	text-shadow: 
+		4px 4px 0px #d5d5d5,
+		7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
 
 /*About me*/
 
 #about {
-	background-color: rgb(10, 9, 59);
-	height:85vh;
+	background-color: #C13394;
 	color:white;
 }
 
@@ -63,6 +91,7 @@ header {
 	padding-top: 50px;
 	width: 75%;
 	margin:0 auto;
+	font-size: 1.5em;
 }
 
 .me {
@@ -74,7 +103,7 @@ header {
 }
 
 #content, .content-link {
-	background-color: rgb(86,85,149);
+	background-color: #C13394;
 	color: white;
 }
 
@@ -82,6 +111,16 @@ header {
 	text-align: center;
 	font-size: 4em;
 	padding-top: 50px;
+}
+
+.progress {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.skills {
+	width:600px;
+	margin: 0 auto;
 }
 
 /*project section*/
@@ -120,16 +159,15 @@ a{
 
 /*footer section*/
 
-#contact, #social {
-	background-color: rgb(129,128,178);
+#social {
+	background-color: #C13394;
 	color: white;
-	width:50%;
-	height: 50vh;
-	float: left;
+	width:300px;
+	margin: 0 auto;
 }
 
 .icons {
-	padding-top:50px;
+	padding-top:70px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -139,20 +177,21 @@ a{
 	background-color: rgb(129,128,178);
 }
 
+/* media section */
+
 @media only screen and (max-width: 633px) {
 	.main-title {
 	position: absolute;
-	font-size: 5em;
-	top:35%;
-	left:15%;
+	font-size: 2em;
+	top:10%;
+	left:5%;
 }
 
 .jobtitle {
 	position: absolute;
-	top: 60%;
-	left: 10%;
-	font-size: 2.5em;
-	padding-left: 50px;
+	top: 20%;
+	left: 5%;
+	font-size: 1.5em;
 }
 
 .sub-title {
@@ -161,12 +200,19 @@ a{
 	padding-top: 30px;
 }
 
+.sub-title2 {
+	font-size:1.6em;
+}
+
+.sub-text {
+	font-size: .9em;
+}
+
 #contact, #social {
 	background-color: rgb(129,128,178);
 	color: white;
-	width:50%;
-	height: 60vh;
-	float: left;
+	height: 40vh;
+	width: 100%;
 }
 
 #project {
@@ -187,7 +233,7 @@ a{
 	transition: all .5s;
 }
 
-.pic:hover {
+.pic:hover { 
 	color: white;
 	transform: scale(1.1);
 }
