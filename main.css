@@ -194,6 +194,18 @@ header {
 	left: 20%;
 }
 
+.show {
+	position: absolute; 
+	top: 75%;
+	left: 45%;
+	background-color:#C13394;
+}
+
+.show:hover {
+	transition: .4s;
+}
+
+
 .main-title, .jobtitle, .sub-title {
 	font-family: Avantgarde, CenturyGothic, sans-serif;
 	text-transform: uppercase;
@@ -214,6 +226,7 @@ header {
 	text-shadow: 
 		4px 4px 0px #d5d5d5,
 		7px 7px 0px rgba(0, 0, 0, 0.2);
+	transition: .4s;
 }
 
 
@@ -441,6 +454,14 @@ a{
 	top: 20%;
 	left: 5%;
 	font-size: 1.5em;
+}
+
+.show {
+	position: absolute; 
+	top: 27%;
+	left: 30%;
+	height: 30px;
+	font-size: .5em;
 }
 
 .sub-title {
